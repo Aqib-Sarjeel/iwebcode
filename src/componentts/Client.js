@@ -14,8 +14,6 @@ const Client = () => {
       </div>
       <div className="client-content">
         <br />
-        <br />
-        <br />
         <div>
           <span>
             <RiArrowLeftCircleLine size="50px" />
@@ -31,9 +29,6 @@ const Client = () => {
             -Ronald Weasley
             <br />
             CEO
-            <br />
-            <br />
-            <br />
             <br />
             <br />
           </p>
