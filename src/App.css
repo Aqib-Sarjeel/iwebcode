@@ -1,38 +1,297 @@
-.App {
+.logo > span {
+  width: 68px;
+  height: 36px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #fff;
+  border: 1px solid #000;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.logo > span :hover {
+  cursor: pointer;
+}
+.logo > span > p {
+  position: relative;
+  top: -24px;
+  left: 22px;
+  font-size: 26px;
+}
+.header-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: 10px 0px 0px 0px;
+  background-color: #f5f5f5;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+}
+.list-item > ul {
+  margin-right: 20px;
+}
+.list-item > ul :hover {
+  cursor: pointer;
+}
+
+.list-item > ul > li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 50px;
+}
+.active {
+  border-bottom: 1px solid #000;
+}
+
+.body-wrapper {
+  display: flex;
+}
+.body-wrapper > h1 {
+  position: relative;
+  left: 80px;
+  font-size: 80px;
+  top: 88px;
+}
+.image-container > img {
+  margin-right: 150px;
+}
+.projects-text {
+  margin-left: 80px;
+  border-bottom: 2px solid #000000;
+  margin-right: 80px;
+}
+.text-wrapper {
+  width: 100%;
+}
+.text-wrapper > h4 {
+  font-size: 30px;
+}
+.project-pics-wrapper {
+  display: flex;
+  margin-left: 46px;
+  flex-wrap: wrap;
+}
+.project-pics-wrapper > div {
+  margin-left: 34px;
+}
+.project-pics-wrapper > div :hover {
+  cursor: pointer;
+}
+
+.project-pics-wrapper > span {
+  position: relative;
+  top: 278.5px;
+  left: 210px;
+}
+.content-text {
+  margin-left: 80px;
+  border-bottom: 2px solid #000000;
+  margin-right: 80px;
+}
+.content-wrapper {
+  display: flex;
+}
+.content-wrapper > div > p {
+  font-size: 30px;
+  margin-left: 80px;
+}
+
+.content-wrapper > div > iframe {
+  border-radius: 10px;
+  margin-right: 80px;
+}
+.about-text {
+  margin-left: 80px;
+  border-bottom: 2px solid #000000;
+  margin-right: 80px;
+}
+.icon-and-text {
+  text-decoration: underline;
+}
+.icon-and-text > span {
+  margin-top: 10px;
+}
+
+.about-wrapper {
+  display: flex;
+}
+.about-wrapper > div > p {
+  font-size: 30px;
+  margin-left: 80px;
+}
+.about-wrapper > div {
+  width: 50%;
+}
+.num-span {
+  padding-top: 6px;
+  padding-bottom: 5px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: inline-block;
+  border: 1px solid #000;
+  margin-right: 8px;
+  padding-left: 18px;
+}
+.drop-down-collapsed > p {
+  margin-right: 80px;
+}
+.icon-span {
+  float: right;
+}
+.icon-span:hover {
+  cursor: pointer;
+}
+.drop-down-text {
+  font-size: 15px;
+  margin-left: 80px;
+}
+.scroll-item {
+  width: 100%;
+}
+.scroll-item > ul {
+  margin-left: 30px;
+  font-size: 20px;
+  list-style-type: square !important;
+}
+.scroll-item > ul > li {
+  display: inline;
+  margin-right: 100px;
+}
+.client-text {
+  margin-left: 80px;
+  border-bottom: 2px solid #000000;
+  margin-right: 80px;
+}
+.client-content {
+  display: flex;
+}
+.client-content > div > p {
+  margin-left: 306px;
+  margin-right: 311px;
+  font-size: 30px;
+}
+.client-content > div > span {
+  margin-left: 170px;
+}
+.dummy-span-c {
+  margin-right: 175px;
+}
+
+/* styling for form is starting from here ===================================================== */
+.hello-text {
+  margin-left: 80px;
+  border-bottom: 2px solid #000000;
+  margin-right: 80px;
+}
+.form-wrapper {
+  display: flex;
+}
+.form-wrapper > div {
+  margin-left: 80px;
+}
+/* .form-wrapper > div > p {
+  font-size: 30px;
+} */
+.form-wrapper > div > form > label {
+  display: block;
+  /* margin-left: 40px; */
+}
+.form-wrapper > div > form > div > label {
+  display: block;
+}
+.form-wrapper > div > form > div > input {
+  display: inline-block;
+}
+
+/* please finish here ==============================================================*/
+
+.blog-wrapper {
+  display: flex;
+}
+.blog-wrapper > div > p {
+  font-size: 20px;
+  margin-left: 80px;
+}
+.blog-wrapper > div {
+  border-right: 2px solid #000;
+}
+.blog-wrapper :last-child {
+  border-right: none;
+}
+.blog-heading {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* news settler start here ==================================================================  */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.news-settler-wrapper > h2 {
+  text-align: center;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.news-settler-wrapper > p {
+  text-align: center;
+}
+.news-settler-input {
+  text-align: center;
+}
+.news-settler-input > input {
+  height: 40px;
+  width: 250px;
+}
+.news-settler-input::placeholder {
+  color: #9f9f9f;
+}
+.news-settler-input > button {
+  background-color: #4e4e4e;
+  color: #fff;
+  margin-left: 10px;
+  width: 75px;
+  height: 45px;
+  border: 2px solid #ffffff;
+}
+.footer-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  margin: 10px 0px 0px 0px;
+  background-color: #f5f5f5;
+}
+
+.logo > p {
+  margin-left: 25px;
+}
+
+.logo {
+  display: flex;
+}
+.cms-wrapper-image > div > img {
+  width: 100%;
+}
+.cms-text-wrapper {
+  display: flex;
+}
+.cms-text-wrapper > p {
+  font-size: 30px;
+  margin-left: 50%;
+}
+.cms-text-wrapper > h2 {
+  margin-left: 80px;
+}
+.cms-image-wrapper-two {
+  display: flex;
+  justify-content: space-around;
+}
+.individual-image-cms {
+  width: 100%;
+}
+.cms-image-wrapper-3 {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.cms-image-wrapper-3 > img {
+  margin-left: 20px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.drop-down-collapsed > hr {
+  margin-left: 80px;
+  margin-right: 80px;
 }
